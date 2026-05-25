@@ -106,3 +106,11 @@ REST_FRAMEWORK = {
     }
 }
 ```
+**The "Override" Trap:** You perfectly identified the pitfall: if you were to define the _same_ class multiple times or try to stack instances of the exact same class, Python would indeed just overwrite the previous definition. By creating new subclasses, you ensure that DRF sees them as unique tools in its "throttle toolkit."
+``` python
+'DEFAULT_THROTTLE_RATES': {
+    'anon': '100/day',
+    'anon': '10/min', # This overwrites the line above!
+    'user': '1000/day'
+}
+```
