@@ -15,7 +15,7 @@ This applies to users who have **logged into your app** (using tokens, sessions,
 - **Why have a limit?** Even logged-in users should have a cap. This prevents one user from accidentally (or intentionally) consuming all of your API quota. Since they are "known" users, you usually grant them a higher limit than anonymous visitors.
 
 ### Global Setup (Easiest)
-``` Python
+``` python
 # settings.py
 REST_FRAMEWORK = {
     'DEFAULT_THROTTLE_CLASSES': [
@@ -47,4 +47,62 @@ class MyHuggingFaceView(APIView):
     def get(self, request):
         # Your logic to call Hugging Face
         return Response({"data": "success"})
+```
+
+
+### Multiple Throttle Classes:
+``` python
+from rest_framework.throttling import UserRateThrottle
+
+class UserMinuteThrottle(UserRateThrottle):
+    rate = '10/minute'
+
+class UserDayThrottle(UserRateThrottle):
+    rate = '1000/day'
+```
+
+``` python
+# views.py:
+class MyHuggingFaceView(APIView):
+    throttle_classes = [UserMinuteThrottle, UserDayThrottle]
+    
+    def get(self, request):
+        # ... logic
+```
+
+### Custom Throttle Classes with scope variable for settings.py
+In your `views.py` (or a dedicated `throttles.py` file), define the specific logic for your tiers.
+``` python
+from rest_framework.throttling import UserRateThrottle
+
+# For logged-in users: 1000/day AND 10/minute
+class UserDayRateThrottle(UserRateThrottle):
+    scope = 'user_day'
+
+class UserMinuteRateThrottle(UserRateThrottle):
+    scope = 'user_minute'
+
+# For anonymous users: 100/day AND 2/minute
+class AnonDayRateThrottle(UserRateThrottle):
+    scope = 'anon_day'
+
+class AnonMinuteRateThrottle(UserRateThrottle):
+    scope = 'anon_minute'
+```
+Now, map these scopes to the actual rate limits. DRF will look for these keys in `DEFAULT_THROTTLE_RATES`.
+``` python
+REST_FRAMEWORK = {
+    'DEFAULT_THROTTLE_CLASSES': [
+        'myapp.throttles.UserDayRateThrottle',
+        'myapp.throttles.UserMinuteRateThrottle',
+        'myapp.throttles.AnonDayRateThrottle',
+        'myapp.throttles.AnonMinuteRateThrottle',
+    ],
+    'DEFAULT_THROTTLE_RATES': {
+        'user_day': '1000/day',
+        'user_minute': '10/minute',
+        'anon_day': '100/day',
+        'anon_minute': '2/minute',
+    }
+}
 ```
