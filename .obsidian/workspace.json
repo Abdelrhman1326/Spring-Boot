@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "dc435d2c5f233d50",
+        "id": "7de2ebc6e5da8543",
         "type": "tabs",
         "children": [
           {
-            "id": "18d7248462e16c36",
+            "id": "af1de8a3d460e3d3",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -190,7 +190,7 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "18d7248462e16c36",
+  "active": "af1de8a3d460e3d3",
   "lastOpenFiles": [
     "Redis/Caching with Redis and Django.md",
     "Redis/Redis as your main Data Base.md",
