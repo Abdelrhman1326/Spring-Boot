@@ -73,7 +73,7 @@ class MyHuggingFaceView(APIView):
 ### Custom Throttle Classes with scope variable for settings.py
 In your `views.py` (or a dedicated `throttles.py` file), define the specific logic for your tiers.
 ``` python
-from rest_framework.throttling import UserRateThrottle
+from rest_framework.throttling import UserRateThrottle, AnonRateThrottle
 
 # For logged-in users: 1000/day AND 10/minute
 class UserDayRateThrottle(UserRateThrottle):
@@ -83,10 +83,10 @@ class UserMinuteRateThrottle(UserRateThrottle):
     scope = 'user_minute'
 
 # For anonymous users: 100/day AND 2/minute
-class AnonDayRateThrottle(UserRateThrottle):
+class AnonDayRateThrottle(AnonRateThrottle):
     scope = 'anon_day'
 
-class AnonMinuteRateThrottle(UserRateThrottle):
+class AnonMinuteRateThrottle(AnonRateThrottle):
     scope = 'anon_minute'
 ```
 Now, map these scopes to the actual rate limits. DRF will look for these keys in `DEFAULT_THROTTLE_RATES`.
