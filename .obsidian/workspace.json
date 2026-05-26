@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Redis/Caching with Redis and Django.md",
+                "file": "Redis/Redis as your main Data Base.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Caching with Redis and Django"
+              "title": "Redis as your main Data Base"
             }
           }
         ]
@@ -192,9 +192,10 @@
   },
   "active": "18d7248462e16c36",
   "lastOpenFiles": [
+    "Redis/Caching with Redis and Django.md",
+    "Redis/Redis as your main Data Base.md",
     "Excalidraw/Backend Roadmap.md",
     "Excalidraw/backend-1.png",
-    "Redis/Caching with Redis and Django.md",
     "Redis",
     "Django rest framework/Rate Limiting.md",
     "Documentations/React.md",
