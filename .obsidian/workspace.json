@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Redis/Redis as your primary database.md",
+                "file": "Redis/Caching with Redis and Django.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Redis as your primary database"
+              "title": "Caching with Redis and Django"
             }
           }
         ]
@@ -192,15 +192,15 @@
   },
   "active": "18d7248462e16c36",
   "lastOpenFiles": [
-    "Redis/Redis as your primary database.md",
+    "Excalidraw/Backend Roadmap.md",
+    "Excalidraw/backend-1.png",
+    "Redis/Caching with Redis and Django.md",
     "Redis",
     "Django rest framework/Rate Limiting.md",
     "Documentations/React.md",
     "Django rest framework",
     "Documentations/Django Rest Framework.md",
     "Excalidraw/REDIS Cash + SQL DB.md",
-    "Excalidraw/Drawing 2026-05-25 19.23.16.excalidraw.md",
-    "Excalidraw/backend-1.png",
     "Excalidraw/Pasted Image 20260525212553_748.png",
     "Excalidraw/Pasted Image 20260525215102_198.png",
     "Excalidraw/Pasted Image 20260525213839_284.png",
@@ -237,7 +237,6 @@
     "Excalidraw/Drawing 2025-10-15 23.00.36.excalidraw.md",
     "Excalidraw/Drawing 2025-10-15 15.44.37.excalidraw.md",
     "Excalidraw/Drawing 2025-10-15 22.50.22.excalidraw.md",
-    "Excalidraw/Drawing 2025-10-15 16.04.06.excalidraw.md",
     "Untitled.canvas"
   ]
 }
