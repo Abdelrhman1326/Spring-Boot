@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Redis/Redis Crash Course.md",
+                "file": "Redis/Redis as your primary database.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Redis Crash Course"
+              "title": "Redis as your primary database"
             }
           }
         ]
@@ -192,7 +192,7 @@
   },
   "active": "18d7248462e16c36",
   "lastOpenFiles": [
-    "Redis/Redis Crash Course.md",
+    "Redis/Redis as your primary database.md",
     "Redis",
     "Django rest framework/Rate Limiting.md",
     "Documentations/React.md",
