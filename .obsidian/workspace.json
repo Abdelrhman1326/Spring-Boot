@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Redis/Redis as your main Data Base.md",
+                "file": "Redis/Redis Syntax.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Redis as your main Data Base"
+              "title": "Redis Syntax"
             }
           }
         ]
@@ -192,8 +192,9 @@
   },
   "active": "af1de8a3d460e3d3",
   "lastOpenFiles": [
-    "Redis/Caching with Redis and Django.md",
     "Redis/Redis as your main Data Base.md",
+    "Redis/Redis Syntax.md",
+    "Redis/Caching with Redis and Django.md",
     "Excalidraw/Backend Roadmap.md",
     "Excalidraw/backend-1.png",
     "Redis",
@@ -237,7 +238,6 @@
     "Excalidraw/Drawing 2025-10-15 23.43.25.excalidraw.md",
     "Excalidraw/Drawing 2025-10-15 23.00.36.excalidraw.md",
     "Excalidraw/Drawing 2025-10-15 15.44.37.excalidraw.md",
-    "Excalidraw/Drawing 2025-10-15 22.50.22.excalidraw.md",
     "Untitled.canvas"
   ]
 }
