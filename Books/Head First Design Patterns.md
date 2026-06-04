@@ -68,7 +68,7 @@ If your company suddenly switches to SendGrid or wants to send SMS text messages
 
 **Coding to an Interface (Good):** First, you define a contract (an Interface) called `NotificationService`. It simply promises that anything implementing it will have a `.send()` method.
 
-``` Plaintext
+``` q
                     +------------------------+
                     |     <<interface>>      |
                     |  NotificationService   |
@@ -94,4 +94,17 @@ class NotificationManager:
 
     def alert_user(self, message):
         self.service.send(message) # Flexibly calls whatever service was passed in
+```
+
+
+## 3. Favor composition over inheritance
+Instead of designing your system by saying what an object **is** (inheritance), you should design it by saying what an object **has** or can **do** (composition).
+
+You achieve this by combining small, focused objects together to build bigger objects, rather than creating a massive family tree of classes.
+
+Inheritance creates a rigid hierarchy. If Class B inherits from Class A, Class B forces itself to inherit _everything_ Class A can do, even if it doesn't want to. This is often called the **"Banana Gorilla Problem"**
+``` q
+“You wanted a banana, but what you got was a gorilla holding the banana and the entire jungle.” — Joe Armstrong
+
+Joe Armstrong: Computer Scientest, invented "Erlang" functional programming language.
 ```
