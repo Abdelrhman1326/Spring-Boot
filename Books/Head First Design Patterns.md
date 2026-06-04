@@ -102,9 +102,11 @@ Instead of designing your system by saying what an object **is** (inheritance), 
 
 You achieve this by combining small, focused objects together to build bigger objects, rather than creating a massive family tree of classes.
 
+## The Core Problem with Inheritance (`is-a`)
 Inheritance creates a rigid hierarchy. If Class B inherits from Class A, Class B forces itself to inherit _everything_ Class A can do, even if it doesn't want to. This is often called the **"Banana Gorilla Problem"**
 ``` q
 “You wanted a banana, but what you got was a gorilla holding the banana and the entire jungle.” — Joe Armstrong
 
 Joe Armstrong: Computer Scientest, invented "Erlang" functional programming language.
 ```
+
