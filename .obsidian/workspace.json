@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Redis/Redis Syntax.md",
+                "file": "Books/Head First Design Patterns.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Redis Syntax"
+              "title": "Head First Design Patterns"
             }
           }
         ]
@@ -192,8 +192,8 @@
   },
   "active": "af1de8a3d460e3d3",
   "lastOpenFiles": [
-    "Redis/Redis as your main Data Base.md",
     "Redis/Redis Syntax.md",
+    "Redis/Redis as your main Data Base.md",
     "Redis/Caching with Redis and Django.md",
     "Excalidraw/Backend Roadmap.md",
     "Excalidraw/backend-1.png",
