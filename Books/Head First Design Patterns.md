@@ -124,3 +124,85 @@ Everything is fine until the game designers come to you and say, _"We want to cr
 - Languages like Java or C# don't even allow you to inherit from two classes at once.
     
 - If you copy and paste the `fight()` code into the `BattleMage` class, you've broken the golden rule of programming (DRY: Don't Repeat Yourself).
+
+## The Solution: Composition (`has-a`)
+
+Instead of forcing a `BattleMage` to _be_ a Warrior and a Mage, you give the character different **behaviors** (or abilities). You pull those behaviors out into their own separate classes.
+
+- A `CombatBehavior` class handles sword fighting.
+    
+- A `MagicBehavior` class handles spell casting.
+
+Now, a `Character` isn't restricted by its family tree. It's just a container that **has** a collection of behaviors.
+
+### The Code Example
+Here is how you would build this flexibly using composition:
+
+``` Java
+import java.util.ArrayList;
+import java.util.List;
+
+// 1. Define the Interface and Isolated Behaviors
+
+// The interface ensures all behaviors have an execute() method
+interface Ability {
+    void execute();
+}
+
+class CombatBehavior implements Ability {
+    @Override
+    public void execute() {
+        System.out.println("Swinging a massive sword!");
+    }
+}
+
+class MagicBehavior implements Ability {
+    @Override
+    public void execute() {
+        System.out.println("Casting a powerful fireball!");
+    }
+}
+
+// 2. Build the flexible Character class using Composition
+
+class GameCharacter {
+    private String name;
+    // Composition: This object HAS A list of items that implement the Ability interface
+    private List<Ability> abilities;
+
+    public GameCharacter(String name) {
+        this.name = name;
+        this.abilities = new ArrayList<>();
+    }
+
+    public void addAbility(Ability ability) {
+        this.abilities.add(ability);
+    }
+
+    public void performActions() {
+        System.out.println("--- " + this.name + "'s Turn ---");
+        for (Ability ability : abilities) {
+            ability.execute(); // Polymorphism in action
+        }
+    }
+}
+
+// 3. Let's run it!
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a traditional Warrior (only has combat)
+        GameCharacter warrior = new GameCharacter("Thorin");
+        warrior.addAbility(new CombatBehavior());
+        warrior.performActions();
+
+        System.out.println(); // Just a blank line for spacing
+
+        // Create a BattleMage (composed of both behaviors!)
+        GameCharacter battleMage = new GameCharacter("Gandalf");
+        battleMage.addAbility(new CombatBehavior());
+        battleMage.addAbility(new MagicBehavior());
+        battleMage.performActions();
+    }
+}
+```
