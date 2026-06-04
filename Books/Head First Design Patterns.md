@@ -109,4 +109,18 @@ Inheritance creates a rigid hierarchy. If Class B inherits from Class A, Class B
 
 Joe Armstrong: Computer Scientest, invented "Erlang" functional programming language.
 ```
+### The Trap: A Video Game Example
+Imagine you are building an RPG video game. You start with a base class called `Character`.
 
+1. You create a `Warrior` that inherits from `Character`. Warriors can `fight()`.
+    
+2. You create a `Mage` that inherits from `Character`. Mages can `castSpell()`.
+
+Everything is fine until the game designers come to you and say, _"We want to create a **BattleMage** character who can both fight with a sword AND cast spells."_
+
+**With Inheritance, you are stuck:**
+- Python supports multiple inheritance, but it introduces the "Diamond Problem" (massive confusion over which base methods take priority).
+    
+- Languages like Java or C# don't even allow you to inherit from two classes at once.
+    
+- If you copy and paste the `fight()` code into the `BattleMage` class, you've broken the golden rule of programming (DRY: Don't Repeat Yourself).
