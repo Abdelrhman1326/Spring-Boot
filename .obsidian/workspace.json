@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Books/Head First Design Patterns.md",
+                "file": "Head First Design Patterns/Chapter One - Strategy Pattern.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Head First Design Patterns"
+              "title": "Chapter One - Strategy Pattern"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 264.5026054382324,
-    "collapsed": true
+    "width": 264.5026054382324
   },
   "right": {
     "id": "d44c63559ae4ff7c",
