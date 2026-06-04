@@ -85,3 +85,13 @@ If your company suddenly switches to SendGrid or wants to send SMS text messages
 | + send(message)   |                         | + send(message) |
 +-------------------+                         +-----------------+
 ```
+
+``` Java
+# The NotificationManager only cares that the object has a .send() method
+class NotificationManager:
+    def __init__(self, service: NotificationService): 
+        self.service = service
+
+    def alert_user(self, message):
+        self.service.send(message) # Flexibly calls whatever service was passed in
+```
