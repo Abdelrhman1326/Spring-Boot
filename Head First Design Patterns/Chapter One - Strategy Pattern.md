@@ -95,7 +95,6 @@ class NotificationManager:
         self.service.send(message) # Flexibly calls whatever service was passed in
 ```
 
-
 ## 3. Favor composition over inheritance
 Instead of designing your system by saying what an object **is** (inheritance), you should design it by saying what an object **has** or can **do** (composition).
 
