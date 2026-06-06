@@ -33,8 +33,7 @@
               "title": "Drawing 2026-06-06 02.59.08.excalidraw"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -204,10 +203,10 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "ce5c4736975064fd",
+  "active": "af1de8a3d460e3d3",
   "lastOpenFiles": [
-    "Head First Design Patterns/Chapter One - Strategy Pattern.md",
     "Head First Design Patterns/Drawing 2026-06-06 02.59.08.excalidraw.md",
+    "Head First Design Patterns/Chapter One - Strategy Pattern.md",
     "Redis/Redis Syntax.md",
     "Redis/Redis as your main Data Base.md",
     "Redis/Caching with Redis and Django.md",
