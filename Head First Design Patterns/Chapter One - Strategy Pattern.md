@@ -12,7 +12,11 @@ At compile time, you use an **Interface** to set up a generic placeholder. The c
 ``` java
 public class Duck {
 	private FlyBehavior flyBehavior; // Interface placeholder
-
+	
+	public void setFlyBehavior(FlyBehavior flyBehavior) {
+		this.flyBehavior = flyBehavior;
+	}
+	
     public void performFly() {
         flyBehavior.fly(); // The compiler just checks: "Does FlyBehavior have a fly() method?" Yes. Code compiles!
     }
@@ -25,7 +29,7 @@ At compile time, the computer has **no idea** if the duck is going to fly with w
 Duck myDuck = new Duck();
 
 // RUNTIME DECISION 1:
-myDuck.setFlyBehavior(new FlyWithWings()); 
+myDuck.setFlyBehavior(new FlyWithWings());
 myDuck.performFly(); // Prints: "Flapping wings!"
 
 // RUNTIME DECISION 2: (The app is still running, no recompiling needed!)
