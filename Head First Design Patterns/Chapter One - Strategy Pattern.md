@@ -11,7 +11,7 @@ At compile time, you use an **Interface** to set up a generic placeholder. The c
 
 ``` java
 public class Duck {
-    private FlyBehavior flyBehavior; // Interface placeholder
+	private FlyBehavior flyBehavior; // Interface placeholder
 
     public void performFly() {
         flyBehavior.fly(); // The compiler just checks: "Does FlyBehavior have a fly() method?" Yes. Code compiles!
