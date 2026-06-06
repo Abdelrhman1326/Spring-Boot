@@ -88,7 +88,7 @@ If your company suddenly switches to SendGrid or wants to send SMS text messages
 +-------------------+                         +-----------------+
 ```
 
-``` Java
+``` python
 # The NotificationManager only cares that the object has a .send() method
 class NotificationManager:
     def __init__(self, service: NotificationService): 
