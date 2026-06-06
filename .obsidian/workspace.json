@@ -20,6 +20,18 @@
               "icon": "lucide-file",
               "title": "Chapter One - Strategy Pattern"
             }
+          },
+          {
+            "id": "ce5c4736975064fd",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Head First Design Patterns/Drawing 2026-06-06 02.59.08.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-06-06 02.59.08.excalidraw"
+            }
           }
         ]
       }
@@ -78,7 +90,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 264.5026054382324
+    "width": 264.5026054382324,
+    "collapsed": true
   },
   "right": {
     "id": "d44c63559ae4ff7c",
@@ -192,6 +205,8 @@
   },
   "active": "af1de8a3d460e3d3",
   "lastOpenFiles": [
+    "Head First Design Patterns/Drawing 2026-06-06 02.59.08.excalidraw.md",
+    "Head First Design Patterns/Chapter One - Strategy Pattern.md",
     "Redis/Redis Syntax.md",
     "Redis/Redis as your main Data Base.md",
     "Redis/Caching with Redis and Django.md",
@@ -236,8 +251,6 @@
     "Excalidraw/Drawing 2025-10-17 17.33.15.excalidraw.md",
     "Excalidraw/Drawing 2025-10-16 00.04.48.excalidraw.md",
     "Excalidraw/Drawing 2025-10-15 23.43.25.excalidraw.md",
-    "Excalidraw/Drawing 2025-10-15 23.00.36.excalidraw.md",
-    "Excalidraw/Drawing 2025-10-15 15.44.37.excalidraw.md",
     "Untitled.canvas"
   ]
 }
