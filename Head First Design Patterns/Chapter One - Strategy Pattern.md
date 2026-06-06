@@ -49,7 +49,6 @@ Imagine you are building an online store.
 **Bad Approach (Mixed together):** If you hardcode FedEx's pricing logic directly inside your `OrderCheckout` class, you'll have to rewrite and re-test your entire checkout system every time FedEx changes its rates or you decide to switch to UPS.
 
 **Good Approach (Separated):** You pull the shipping logic out of the checkout class.
-
 ## 2. Code to an interface, not to an implementation
 **The Core Idea:** Don't tie your code directly to a specific, concrete class (the implementation). Instead, tie your code to a contract or a role (the interface). This makes your code "polymorphic," meaning you can swap out the actual object doing the work behind the scenes without changing the code that uses it.
 
