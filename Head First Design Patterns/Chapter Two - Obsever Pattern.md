@@ -37,7 +37,6 @@ public interface Subject {
 ```
 
 ---
-
 ## 2. Observer
 
 Objects interested in state changes.
@@ -173,10 +172,9 @@ public class CurrentConditionsDisplay implements Observer, DisplayElement {
 
 ---
 
-## StatisticsDisplay
+## Statistics Display
 
-Tracks average/min/max temperature.
-
+Tracks average/min/max temperature:
 ``` java
 public class StatisticsDisplay implements Observer, DisplayElement {
 
@@ -298,7 +296,6 @@ Cons:
 ## Pull Model
 
 Subject sends itself.
-
 ``` java
 observer.update(this);
 ```
@@ -306,7 +303,6 @@ observer.update(this);
 Observer asks for what it needs.
 
 Example:
-
 ``` java
 weatherData.getTemperature();
 ```
@@ -317,13 +313,49 @@ Pros:
 Cons:
 - Slightly more coupling
 
+### Key idea
+
+> The subject does not control what observers do, it only announces that something changed.
+
+Everything after `update()` is fully independent behavior.
+
+---
+# Alternative form (what `update(this)` means)
+
+Instead of sending raw values:
+``` java
+o.update(this);
+```
+
+It means:
+
+> “Here is the subject itself — go fetch what you need.”
+
+So observers would do:
+``` java
+weatherData.getTemperature();
+weatherData.getHumidity();
+```
+
+---
+# Final mental model
+
+``` java
+					  tate changes in Subject
+						        ↓
+					 Subject notifies observers
+						        ↓
+					 Observers receive update
+						        ↓
+				  Each observer reacts on its own
+```
+
 ---
 # Design Principles
 
 ## 1. Identify the aspects of your application that vary and separate them from what stays the same
 
 ### Core Idea
-
 Separate frequently changing parts from stable parts.
 
 Weather Station:
@@ -432,8 +464,6 @@ Benefits:
 - easier testing
 - easier extension
 - fewer cascading bugs
-
-This is the **main principle** of the Observer chapter.
 
 ---
 # Summary
