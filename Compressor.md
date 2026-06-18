@@ -66,5 +66,5 @@ cd C:\Users\user\Desktop\ultra
 .\srep.exe -m3f -d8g -tc64 game.ood.pcf game.srep
 
 # 5. Final Ultimate LZMA2 7-Zip compression
-.\7z\7za.exe a -mx9 -md=512m -fb=273 -ms=on TLOU_Repack.7z game.srep
+.\7z\x64\7za.exe a -m0=lzma2 -mx9 -md=256m -ms=on HollowKnight_Repack_Final.7z game.srep
 ```
