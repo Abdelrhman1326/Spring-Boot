@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Head First Design Patterns/Chapter Two - Obsever Pattern.md",
+                "file": "Game Repacker.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Chapter Two - Obsever Pattern"
+              "title": "Game Repacker"
             }
           }
         ]
@@ -192,8 +192,9 @@
   },
   "active": "af1de8a3d460e3d3",
   "lastOpenFiles": [
-    "Head First Design Patterns/Chapter One - Strategy Pattern.md",
     "Head First Design Patterns/Chapter Two - Obsever Pattern.md",
+    "Game Repacker.md",
+    "Head First Design Patterns/Chapter One - Strategy Pattern.md",
     "Head First Design Patterns/Drawing 2026-06-06 02.59.08.excalidraw.md",
     "Redis/Redis Syntax.md",
     "Redis/Redis as your main Data Base.md",
@@ -237,7 +238,6 @@
     "Excalidraw/Drawing 2025-10-16 00.04.46.excalidraw.md",
     "Excalidraw/Drawing 2025-10-16 14.40.01.excalidraw.md",
     "Excalidraw/Drawing 2025-10-17 17.33.15.excalidraw.md",
-    "Excalidraw/Drawing 2025-10-16 00.04.48.excalidraw.md",
     "Untitled.canvas"
   ]
 }
