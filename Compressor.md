@@ -45,3 +45,26 @@ Remove-Item game.tar, game.pcf, game.srep
 # 4. Extract the final game folder out of the tar file
 .\7z\7za.exe x game.tar -o"..\Hollow Knight Extracted\"
 ```
+
+``` powershell
+# Move to your working directory
+cd C:\Users\user\Desktop\ultra
+
+# 1. Create the base uncompressed tar stream
+.\7z\7za.exe a -ttar game.tar "..\The Last of Us Part I\"
+
+# 2. Run oo2reck to un-pack the Oodle streams 
+# This decodes the Kraken/Leviathan algorithms into raw bytes
+.\oo2reck.exe c game.tar game.ood
+
+# 3. Run Precomp on the resulting file
+# This cleans up any standard zlib/png streams skipped by oo2reck
+.\precomp.exe -intense -v game.ood
+
+# 4. Run SREP (Max 8GB dictionary for your 32GB RAM)
+# Now that Oodle and zlib are decoded, SREP will find massive repetition loops
+.\srep.exe -m3f -d8g -tc64 game.ood.pcf game.srep
+
+# 5. Final Ultimate LZMA2 7-Zip compression
+.\7z\7za.exe a -mx9 -md=512m -fb=273 -ms=on TLOU_Repack.7z game.srep
+```
