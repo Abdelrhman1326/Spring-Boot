@@ -19,7 +19,7 @@ ultra/
 
 **Step 1: Create Base Stream** Packs the target folder into an uncompressed, structured TAR stream.
 ``` PowerShell
-.\bin\7z\x64\7za.exe a -ttar game.tar "..\Target Game Folder\"
+& "C:\Program Files\7-Zip\7z.exe" a -ttar test.tar "path"
 ```
 
 **Step 2: Stream Inflation (Precomp) & Target Purge** Deep-scans the stream to find and temporarily decompress all hidden Zlib layers into `game.pcf`. The moment it finishes, the massive `game.tar` is immediately deleted.
