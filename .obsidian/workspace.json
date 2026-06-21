@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Game Repacker.md",
+                "file": "Head First Design Patterns/Chapter Two - Obsever Pattern.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Game Repacker"
+              "title": "Chapter Two - Obsever Pattern"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 264.5026054382324
+    "width": 264.5026054382324,
+    "collapsed": true
   },
   "right": {
     "id": "d44c63559ae4ff7c",
@@ -192,8 +193,8 @@
   },
   "active": "3de1a5b252654476",
   "lastOpenFiles": [
-    "Compressor.md",
     "Game Repacker.md",
+    "Compressor.md",
     "Head First Design Patterns/Chapter Two - Obsever Pattern.md",
     "Head First Design Patterns/Chapter One - Strategy Pattern.md",
     "Head First Design Patterns/Drawing 2026-06-06 02.59.08.excalidraw.md",
