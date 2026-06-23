@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring Boot File Structure Tree.md",
+                "file": "Spring Boot/Spring Boot File Structure Tree.md",
                 "mode": "source",
                 "source": false
               },
@@ -190,9 +190,9 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "eec09b70e01ca1bf",
+  "active": "3094955507eb32f5",
   "lastOpenFiles": [
-    "Spring Boot File Structure Tree.md",
+    "Spring Boot/Spring Boot File Structure Tree.md",
     "Spring Boot",
     "Head First Design Patterns/Drawing 2026-06-21 15.49.41.excalidraw.md",
     "Head First Design Patterns/Chapter Two - Obsever Pattern.md",
