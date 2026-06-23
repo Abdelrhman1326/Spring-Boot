@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "299a792a108b5092",
+        "id": "a08b7f427cf357b2",
         "type": "tabs",
         "children": [
           {
-            "id": "e27dd12312a47884",
+            "id": "eec09b70e01ca1bf",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Head First Design Patterns/Drawing 2026-06-21 15.49.41.excalidraw.md"
+                "file": "Spring Boot File Structure Tree.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-06-21 15.49.41.excalidraw"
+              "icon": "lucide-file",
+              "title": "Spring Boot File Structure Tree"
             }
           }
         ]
@@ -76,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 264.5026054382324,
-    "collapsed": true
+    "width": 264.5026054382324
   },
   "right": {
     "id": "d44c63559ae4ff7c",
@@ -189,8 +190,10 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "e27dd12312a47884",
+  "active": "eec09b70e01ca1bf",
   "lastOpenFiles": [
+    "Spring Boot File Structure Tree.md",
+    "Spring Boot",
     "Head First Design Patterns/Drawing 2026-06-21 15.49.41.excalidraw.md",
     "Head First Design Patterns/Chapter Two - Obsever Pattern.md",
     "Game Repacker.md",
@@ -235,8 +238,6 @@
     "Security",
     "Theory/sat boolean Satisfiability problem/Sudoku/Proof.md",
     "Theory/sat boolean Satisfiability problem/Sudoku",
-    "Theory/sat boolean Satisfiability problem",
-    "Excalidraw/Drawing 2025-10-16 00.04.46.excalidraw.md",
     "Untitled.canvas"
   ]
 }
