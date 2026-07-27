@@ -42,12 +42,13 @@ public User setProfileImage(User user, MultipartFile file) throws IOException {
 Storing raw image binary data directly inside PostgreSQL using the `bytea` (byte array) column type or PostgreSQL Large Objects.
 
 ``` Java
-
-```
-
-``` Java
-
+@Transactional
+public User setProfileImage(User user, MultipartFile file) throws IOException {
+    // Convert the MultipartFile binary input stream straight into a byte array
+    user.setProfileImage(file.getBytes());
+    // Save directly to PostgreSQL bytea column
+    return userRepository.save(user);
+}
 ```
 
 `MultipartFile` is a Spring Framework interface that acts as a wrapper for an uploaded file coming in via an HTTP `multipart/form-data` request. Under the hood, it holds both the **raw binary data** of the file and its **associated metadata**.
-
