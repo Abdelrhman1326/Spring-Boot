@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring Boot/Spring Boot File Structure Tree.md",
+                "file": "Django rest framework/Rate Limiting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Spring Boot File Structure Tree"
+              "title": "Rate Limiting"
             }
           }
         ]
@@ -190,31 +190,31 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "3094955507eb32f5",
+  "active": "eec09b70e01ca1bf",
   "lastOpenFiles": [
+    "Excalidraw/REDIS Cash + SQL DB.md",
+    "Excalidraw/Pasted Image 20260525213839_284.png",
+    "Excalidraw/Pasted Image 20260525213342_796.png",
+    "Excalidraw/Pasted Image 20260525212553_748.png",
+    "Excalidraw/backend-1.png",
+    "Excalidraw/Backend Roadmap.md",
+    "Head First Design Patterns/Observer Pattern Board.md",
+    "Game Repacker.md",
     "Spring Boot/Spring Boot File Structure Tree.md",
     "Spring Boot",
-    "Head First Design Patterns/Drawing 2026-06-21 15.49.41.excalidraw.md",
     "Head First Design Patterns/Chapter Two - Obsever Pattern.md",
-    "Game Repacker.md",
     "Compressor.md",
     "Head First Design Patterns/Chapter One - Strategy Pattern.md",
     "Head First Design Patterns/Drawing 2026-06-06 02.59.08.excalidraw.md",
     "Redis/Redis Syntax.md",
     "Redis/Redis as your main Data Base.md",
     "Redis/Caching with Redis and Django.md",
-    "Excalidraw/Backend Roadmap.md",
-    "Excalidraw/backend-1.png",
     "Redis",
     "Django rest framework/Rate Limiting.md",
     "Documentations/React.md",
     "Django rest framework",
     "Documentations/Django Rest Framework.md",
-    "Excalidraw/REDIS Cash + SQL DB.md",
-    "Excalidraw/Pasted Image 20260525212553_748.png",
     "Excalidraw/Pasted Image 20260525215102_198.png",
-    "Excalidraw/Pasted Image 20260525213839_284.png",
-    "Excalidraw/Pasted Image 20260525213342_796.png",
     "N.md",
     "Excalidraw/backend.pdf",
     "Excalidraw",
@@ -236,7 +236,6 @@
     "Security/CCNA.md",
     "Security/Penetration Testing.md",
     "Security",
-    "Theory/sat boolean Satisfiability problem/Sudoku/Proof.md",
     "Theory/sat boolean Satisfiability problem/Sudoku",
     "Untitled.canvas"
   ]
