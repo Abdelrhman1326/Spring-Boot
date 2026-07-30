@@ -70,3 +70,20 @@ public class ResourceNotFoundException extends RuntimeException {
 `@ResponseStatus(HttpStatus.NOT_FOUND)` tells spring to return a status code **404** (which it widely well known to mean **not found**) when using the custom exception **ResourceNotFoundException** anywhere.
 
 The **ResourceNotFoundException** takes a **message** as a **String** argument and then pass it to the parent constructor (the constructor of **RuntimeException**) which make it easy to throw the custom exception anywhere with a passed custom message according to the context need.
+
+
+### When to Use **Unchecked Exceptions** (`extends RuntimeException`)
+Use unchecked exceptions for **unrecoverable errors, programming bugs, or bad client requests** where the caller cannot reasonably fix the issue programmatically on the spot.
+
+- **Missing / Unauthorized Resources:** Requested record doesn't exist (`ResourceNotFoundException`), or the user lacks permission (`AccessDeniedException`).
+- **Invalid Arguments / Bad Payloads:** Null pointers, array index out of bounds, or illegal parameters passed to a method.
+- **Infrastructure Failures:** Database connectivity loss, network timeouts, or hardware issues.
+
+> **Rule of Thumb for Web APIs:** **Use unchecked exceptions almost everywhere.** They allow errors to bubble up naturally to global error handlers (`@RestControllerAdvice`) without cluttering your business logic with signature noise (`throws`).
+
+### When to Use **Checked Exceptions** (`extends Exception`)
+Use checked exceptions for **foreseeable, recoverable business conditions** where you explicitly want to force the caller to handle the situation immediately at compile time.
+
+- **Recoverable Fallbacks:** Payment gateway fails with a soft decline $\rightarrow$ caller is forced to attempt a fallback payment method or prompt the user for retry logic.
+- **Expected External Failures:** Reading a configuration file from disk that might be missing $\rightarrow$ caller is forced to handle creating a default configuration file.
+- **Strict API Contracts:** Designing a core core library/SDK where you want to mandate that downstream developers handle a specific scenario explicitly.
