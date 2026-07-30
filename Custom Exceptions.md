@@ -87,4 +87,3 @@ Use checked exceptions for **foreseeable, recoverable business conditions** wher
 - **Recoverable Fallbacks:** Payment gateway fails with a soft decline $\rightarrow$ caller is forced to attempt a fallback payment method or prompt the user for retry logic.
 - **Expected External Failures:** Reading a configuration file from disk that might be missing $\rightarrow$ caller is forced to handle creating a default configuration file.
 - **Strict API Contracts:** Designing a core core library/SDK where you want to mandate that downstream developers handle a specific scenario explicitly.
-ddd
