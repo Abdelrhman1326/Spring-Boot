@@ -13,7 +13,7 @@ In some scenarios, ignoring missing entities is acceptable.
 
 For example, suppose an endpoint processes a collection of objects. Some objects may exist, while others may not. If the endpoint should continue processing the valid objects and ignore the missing ones, we can simply skip the missing entities instead of throwing an exception.
 
-```
+``` Java
 @Transactional
 public void updateSortOrder(User user, Map<Long, Integer> idOrder) {
     for (Map.Entry<Long, Integer> entry : idOrder.entrySet()) {
@@ -59,7 +59,7 @@ If the client requests an entity that does not exist (or does not belong to the 
 
 A common way to achieve this is by using `orElseThrow()` together with `ResponseStatusException`.
 
-```
+``` Java
 @Transactional
 public void updateSortOrder(User user, Map<Long, Integer> idOrder) {
     for (Map.Entry<Long, Integer> entry : idOrder.entrySet()) {
@@ -82,7 +82,7 @@ In this case, the client receives a **404 Not Found** response instead of a gene
 
 Example response:
 
-```
+``` json
 {
   "timestamp": "2026-08-01T18:28:50.123+00:00",
   "status": 404,
