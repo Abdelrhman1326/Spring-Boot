@@ -1,3 +1,5 @@
+# Infinite JSON Recursion & Over-exposure of Private Database Data.
+
 Without a DTO, returning the JPA entity (`Link`) directly from your REST Controller causes two major problems in a Spring Boot application: **Infinite JSON Recursion** and **Over-exposure of Private/Database Data**.
 
 ### Problem 1: Infinite JSON Recursion (`StackOverflowError`)

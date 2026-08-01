@@ -1,3 +1,5 @@
+# Custom Exceptions
+
 Here's why creating custom exceptions like `ResourceNotFoundException` is a standard best practice in Spring Boot:
 
 ### 1. Translates Code Logic into Proper HTTP Status Codes
